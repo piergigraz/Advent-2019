@@ -104,8 +104,6 @@ const modules1 = [64010,
     const fuel = modules1.map((cargo) =>{
        return Math.floor(cargo/ 3)-2;
     }); 
-    // console.log(fuel);
     const totFuel = fuel.reduce((cargo,acc) => cargo + acc );
     console.log(totFuel);
 
-    // Correct!!!

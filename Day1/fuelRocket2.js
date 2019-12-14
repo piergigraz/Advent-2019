@@ -106,20 +106,17 @@ const modules1 = [64010,
         let fuelCargo = Math.floor(cargo/ 3)-2; 
         //fuelWeight is the weight of fuel needed counting the weight of equipment and fuel itself
         let fuelWeight = fuelCargo;
-        // console.log(fuelWeight, fuelCargo);
         //Iteration for adding to fuelWeight all the fuel needed counting fuel weight itself
         for (let i=0;fuelCargo > 0;i++){
             fuelCargo = Math.floor(fuelCargo/ 3)-2;
             if(fuelCargo>0) {
               fuelWeight += fuelCargo;
             }
-            // console.log(fuelWeight, fuelCargo, i);
 
         };
 
         return fuelWeight;
         });
-    // console.log(fuel);
     const totFuel = fuel.reduce((cargo,acc) => cargo + acc );
     console.log(totFuel);
 
