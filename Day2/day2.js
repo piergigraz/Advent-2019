@@ -30,8 +30,8 @@ indexes.map( value => {
             let output = data[value+3];
             let inputA = data[value+1];
             let inputB = data[value+2];
-
             return data[output] = data[inputA] + data[inputB];
+            
             
         case 2:
             //same as case 1 but multiply instead of sum;
@@ -40,6 +40,8 @@ indexes.map( value => {
             inputB = data[value+2];
             return data[output] = data[inputA] * data[inputB];
             
+            
+            
         case 99: break; 
         
         }
@@ -47,3 +49,4 @@ indexes.map( value => {
 });
 // after processing an optcode, jump of 4 blocks and process next optcode
 console.log(data[0]);
+
